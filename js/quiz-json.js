@@ -1,3 +1,8 @@
+//This was updated today
+
+//Got the renderQuestion function fixed
+
+
 var pos = 0, test, test_status, question, choice, choices, choiceA, choiceB, choiceC, choiceD, correct=0, name = 0; 
 //setting variables
 
@@ -90,7 +95,8 @@ function percent()
 
 function renderQuestion()
 { 
-    test = _("test"); 
+    //fixed this bit
+	test = _("test"); 
     if(pos >= questions.length)//If position is greater or equal to the length of question, ie 20
     { 
         test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct (" +percent() + "%)</h2>";//Print # correct out of 20
